@@ -4,10 +4,24 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+
+	<script>
+        function updateLetterCount() {
+            let text = document.getElementById("evaluatedText").value;
+            let letterCount = text.length;
+            document.getElementById("letterCount").innerHTML = letterCount;
+        }
+    </script>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+
+	<h1>Scrabble Word Length Tool</h1>
+    <input type="text" id="evaluatedText" onkeyup="updateLetterCount()">
+    <h3 id="letterCount">0</h3>
+
+
     <script type="text/javascript" src="./script.js">
 </script>
 
